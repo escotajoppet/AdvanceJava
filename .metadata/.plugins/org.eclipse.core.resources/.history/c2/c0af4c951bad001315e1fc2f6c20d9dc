@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<jsp:useBean id="funeralPlan" class="funeral.plan.FuneralPlan" scope="session"/>
+
+<%
+	String selectedPlan = request.getParameter("plan");
+	String pageLocation = "";
+
+	if(request.getParameter("btn")!=null && request.getParameter("btn").equals("next")){
+		if(selectedPlan.equals("Cremation Plan")){
+			
+		} else if(selectedPlan.equals("Life Plans with Money Back")){
+			
+		}
+	}
+	
+	funeralPlan.setPlans();
+%>
+
+<body>
+	<center>
+		<h1>Select your plan</h1>
+		<form action="PageController">
+			<table border="2" cellpadding="10" style="width: 1000px;">
+				<tr>
+					<th>#</th>
+					<th>Plan</th>
+					<th>Description</th>
+				</tr>
+				
+				<%
+					for(int i = 0; i<funeralPlan.getPlans().size(); i++){
+				%>
+					<tr>
+						<td><input type="radio" name="plan" value="<%=funeralPlan.getPlans().get(i) %>" <%=funeralPlan.getPlans().get(i).contains("Traditional") ? "CHECKED" : ""%>/></td>
+						<td><%=funeralPlan.getPlans().get(i) %></td>
+						<td><%=funeralPlan.getDescriptions().get(i) %></td>
+					</tr>
+				<%
+					} funeralPlan.clearPlans();
+				%>
+			</table>
+			
+			<br /><br />
+			
+			<button type="submit" name="btn" value="next">Next --></button><br /><br />			
+			<button type="submit" name="btn" value="logout">Log Out</button>
+		</form>
+	</center>
+</body>
+</html>

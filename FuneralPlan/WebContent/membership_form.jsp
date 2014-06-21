@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<jsp:useBean id="funeralPlan" class="funeral.plan.FuneralPlan" scope="session"/>
+
+<%
+	String firstName = request.getParameter("firstname");
+	String lastName = request.getParameter("lastname");
+	String address = request.getParameter("address");
+	String mobileNumber = request.getParameter("mobile");
+	String emailAddress = request.getParameter("emailaddress");
+	String birthDate = request.getParameter("birthdate");
+	String gender = request.getParameter("gender");
+	String civilStatus = request.getParameter("civilstatus");
+	String username = request.getParameter("username");
+	String password = request.getParameter("password");
+	String retypePass = request.getParameter("retypepassword");
+	
+	if(request.getParameter("btn")!=null && request.getParameter("btn").equals("registeruser")){
+		String fullName = lastName + ", " + firstName;
+		funeralPlan.registerUser(fullName, address, mobileNumber, emailAddress, birthDate, gender, civilStatus, username, password, retypePass);
+	}
+%>
+
+<body>
+	<center>
+		<h1>Funeral Plan</h1>
+		<h3>Sign Up</h3>
+		
+		<form action="PageController">
+			Last Name: <input type="text" name="lastname" REQUIRED/><br />
+			First Name: <input type="text" name="firstname" REQUIRED/><br />
+			Address: <input type="text" name="address" REQUIRED/><br />
+			Mobile Number: <input type="text" name="mobile" REQUIRED/><br />
+			Email Address: <input type="text" name="emailaddress" REQUIRED/><br />
+			Date of Birth : <input type="date" name="birthdate" REQUIRED/><br />
+			Gender: <label for=""><input type="radio" name="gender" value=Male CHECKED/>Male</label>
+			<label for=""><input type="radio" name="gender" value="Female"/>Female</label><br />			
+			Civil Status: <input type="text" name="civilstatus" REQUIRED/><br />
+			Username: <input type="text" name="username" REQUIRED/><br />
+			Password: <input type="password" name="password" REQUIRED/><br />
+			Retype Password: <input type="password" name="retypepassword" REQUIRED/><br /><br />
+			
+			<button type="submit" name="btn" value="registeruser">Sign Up</button>
+		</form>
+		
+		<form action="PageController">
+			<button type="submit" name="btn" value="backtologin">Back to Login Page</button>
+		</form>
+		
+		<br /><br />
+		
+		<%=funeralPlan.getMessage() %>
+		<%funeralPlan.setMessage(""); %>
+	</center>
+</body>
+</html>

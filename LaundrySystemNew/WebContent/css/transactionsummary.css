@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+
+#summaryoftransaction img{
+	margin-top: -78pxpx;
+}
+
+#transactionsummary img{
+	margin-top:20px;
+}
+
+input.textbox{
+	background: #39c5cb;
+	width:100px;
+	height:20px;
+	border:2px solid black;
+	font-family:'bubblegum sans';
+	font-size: 14px;
+	margin-top:-25px;
+	margin-left:20px;
+}

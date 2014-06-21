@@ -1,0 +1,7 @@
+grades:
+
+major exams - midterm, final
+
+exams - quizzes, seatworks, assignments
+
+project - midterm, final

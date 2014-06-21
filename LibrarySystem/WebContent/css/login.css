@@ -1,0 +1,96 @@
+#LogIn h2{
+font-family:candara;
+width:105px;
+height:30px;
+font-size:25px;
+margin-top:61px;
+float:left;
+margin-left:-60px;
+}
+
+button.myButton{
+background-image:url(../img/guest.png);
+width:166px;
+height:48px;
+border-style:none;
+border-radius:15px;
+margin-left:665px;
+}
+
+#guest1{
+margin-top:-47px;
+}
+
+button.myButton:active{
+background:url(../img/guest.png);
+}
+
+input.myButton2{
+background-image:url(../img/admin.png);
+width:166px;
+height:48px;
+border-style:none;
+border-radius:15px;
+margin-top:100px;
+margin-left:-15px;
+}
+
+input.myButton2:active{
+background:url(../img/admin.png);
+}
+
+
+#AdminLogIn{
+background: url(../img/LogIn.png);
+width: 386px;
+height: 260px;
+border:none;
+border-radius:15px;
+margin-top:-23px;
+
+position:relative;
+}
+
+input.adminForm, p{
+margin-top: 65px;
+}
+
+.label1{
+font-family:candara;
+font-weight: bold italic;
+font-size:15px;
+width:60px;
+position:absolute;
+margin-top:71px;
+margin-left:32px;
+}
+
+input.username{
+background: url(../img/username.png);
+width:235px;
+height:39px;
+border:none;
+margin-right:25px;
+float:right;
+padding:0 10px;
+}
+
+input.password{
+background: url(../img/username.png);
+width:235px;
+height:39px;
+border:none;
+margin-right:25px;
+float:right;
+padding:0 10px;
+}
+
+button.login{
+background: url(../img/loginButton.png);
+width:140px;
+height:45px;
+border:none;
+margin-top:22px;
+margin-left:123px;
+text-indent:-9999px;
+}

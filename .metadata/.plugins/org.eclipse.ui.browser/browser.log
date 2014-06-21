@@ -1,0 +1,45 @@
+
+Mar 12, 2014 21:32:23.12 NEW SESSION
+Mar 12, 2014 21:32:23.12 NOTE: child process received `Goodbye', closing down
+Mar 12, 2014 21:41:19.07 NOTE: child process received `Goodbye', closing down
+Mar 12, 2014 21:41:19.08 [Child 960] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 312
+
+Mar 18, 2014 13:40:22.32 NEW SESSION
+Mar 18, 2014 13:40:22.32 *************************
+Mar 18, 2014 13:40:22.34 A coding exception was thrown and uncaught in a Task.
+Mar 18, 2014 13:40:22.34 
+Mar 18, 2014 13:40:22.34 Full message: TypeError: this._providerManager is null
+Mar 18, 2014 13:40:22.35 Full stack: doCollection@resource://gre/modules/HealthReport.jsm:4725
+Mar 18, 2014 13:40:22.35 TaskImpl_run@resource://gre/modules/Task.jsm:233
+Mar 18, 2014 13:40:22.35 resolve@resource://gre/modules/commonjs/sdk/core/promise.js:118
+Mar 18, 2014 13:40:22.35 then@resource://gre/modules/commonjs/sdk/core/promise.js:43
+Mar 18, 2014 13:40:22.37 resolve@resource://gre/modules/commonjs/sdk/core/promise.js:185
+Mar 18, 2014 13:40:22.37 TaskImpl_run@resource://gre/modules/Task.jsm:239
+Mar 18, 2014 13:40:22.37 @resource://gre/modules/Promise.jsm:719
+Mar 18, 2014 13:40:22.39 @resource://gre/modules/Promise.jsm:483
+Mar 18, 2014 13:40:22.39 
+Mar 18, 2014 13:40:22.39 *************************
+Mar 18, 2014 13:40:22.39 *************************
+Mar 18, 2014 13:40:22.39 A coding exception was thrown and uncaught in a Task.
+Mar 18, 2014 13:40:22.39 
+Mar 18, 2014 13:40:22.40 Full message: TypeError: this._providerManager is null
+Mar 18, 2014 13:40:22.40 Full stack: doUpload@resource://gre/modules/HealthReport.jsm:5192
+Mar 18, 2014 13:40:22.40 TaskImpl_run@resource://gre/modules/Task.jsm:234
+Mar 18, 2014 13:40:22.40 reject@resource://gre/modules/commonjs/sdk/core/promise.js:133
+Mar 18, 2014 13:40:22.40 then@resource://gre/modules/commonjs/sdk/core/promise.js:52
+Mar 18, 2014 13:40:22.42 resolve@resource://gre/modules/commonjs/sdk/core/promise.js:185
+Mar 18, 2014 13:40:22.42 reject@resource://gre/modules/commonjs/sdk/core/promise.js:208
+Mar 18, 2014 13:40:22.42 TaskImpl_handleException@resource://gre/modules/Task.jsm:301
+Mar 18, 2014 13:40:22.42 TaskImpl_run@resource://gre/modules/Task.jsm:245
+Mar 18, 2014 13:40:22.42 resolve@resource://gre/modules/commonjs/sdk/core/promise.js:118
+Mar 18, 2014 13:40:22.43 then@resource://gre/modules/commonjs/sdk/core/promise.js:43
+Mar 18, 2014 13:40:22.46 resolve@resource://gre/modules/commonjs/sdk/core/promise.js:185
+Mar 18, 2014 13:40:22.46 TaskImpl_run@resource://gre/modules/Task.jsm:239
+Mar 18, 2014 13:40:22.46 @resource://gre/modules/Promise.jsm:719
+Mar 18, 2014 13:40:22.46 @resource://gre/modules/Promise.jsm:483
+Mar 18, 2014 13:40:22.46 
+Mar 18, 2014 13:40:22.46 *************************
+
+Mar 18, 2014 17:22:31.07 NEW SESSION
+Mar 18, 2014 17:22:31.07 NOTE: child process received `Goodbye', closing down
+Mar 18, 2014 17:22:31.10 [Child 4964] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 312

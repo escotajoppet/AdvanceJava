@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+table {
+font-family:candara;
+margin-top:50px;
+width:900px;
+text-align:center;
+}
+
+#table h1{
+	margin-left:130px;
+	font-family:candara;
+	margin-bottom:50px;
+}
+
+button.back{
+background: url(../img/back.png);
+width:135px;
+height:45px;
+border:none;
+margin-top:20px;
+text-align:center;
+}

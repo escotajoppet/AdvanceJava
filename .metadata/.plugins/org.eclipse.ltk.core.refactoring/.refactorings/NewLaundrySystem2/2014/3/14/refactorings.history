@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 packages to &apos;NewLaundrySystem/src&apos;&#x0D;&#x0A;- Original project: &apos;NewLaundrySystem2&apos;&#x0D;&#x0A;- Destination element: &apos;NewLaundrySystem/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     NewLaundrySystem2/src/database.connection&#x0D;&#x0A;     NewLaundrySystem2/src/laundry.system&#x0D;&#x0A;     NewLaundrySystem2/src/transaction.information&#x0D;&#x0A;     NewLaundrySystem2/src/sql.string.commands&#x0D;&#x0A;- Update references to refactored element" description="Move packages" destination="=NewLaundrySystem/src" element1="/src&lt;database.connection" element2="/src&lt;laundry.system" element3="/src&lt;transaction.information" element4="/src&lt;sql.string.commands" flags="589830" fragments="4" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1396208452972" version="1.0"/>
+</session>

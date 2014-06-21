@@ -1,0 +1,91 @@
+package trip.practice;
+
+import java.util.Scanner;
+
+public class IchiReview {
+	public static void main(String[] args) {
+		palindrome();
+		floor();
+		ceiling();
+		factorial();
+		primeComposite();
+	}
+	
+	/////////////////////////////////////////////////////////////
+	public static void palindrome(){
+		Scanner scan = new Scanner(System.in);	
+		
+		System.out.println("Enter Anything: ");
+		String store = scan.nextLine();		
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(store);
+		
+		String reverse = sb.reverse().toString();
+		
+		if(store.equals(reverse)){
+			System.out.println("palindrome");
+		} else{
+			System.out.println("not palindrome");
+		}
+	}
+	
+	///////////////////////////////////////////////////////////////
+	public static void floor(){
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		Double input = Double.parseDouble(scan.nextLine());
+		
+		System.out.println(Math.floor(input));
+	}
+	
+	///////////////////////////////////////////////////////////////
+	public static void ceiling(){
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a number: ");
+		Double input = Double.parseDouble(scan.nextLine());
+		
+		System.out.println(Math.ceil(input));
+	}
+	
+	///////////////////////////////////////////////////////////////
+	public static void factorial(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		
+		int input = Integer.parseInt(scan.nextLine());
+		System.out.println(factMethod(input));
+	}
+	
+	public static int factMethod(int n) {
+		if(n==1)
+			return 1;
+		else
+			return n * factMethod(n-1);
+	}
+	
+	///////////////////////////////////////////////////////////////
+	public static void primeComposite(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		
+		int input = Integer.parseInt(scan.nextLine());
+		int count = 0;
+		
+		for(int i = 2; i<10; i++){
+			if(i!=input && input == (input/i)*i){
+				count++;
+				break;
+			} 
+		}
+		
+		System.out.println(count>0 ? "Composite" : "Prime");
+	}
+	
+	public static void factorialIterative(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+	}
+}

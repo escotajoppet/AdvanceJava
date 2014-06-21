@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin-top: 30px;
+	background-color: aliceblue;
+} th, td{
+	text-align: center;
+} .tabled{
+	width: 800px;
+} .buton{
+	width: 160px;
+} .buton-class{
+	width: 100%;'
+} .adding{
+	width: 400px; 
+} #firstname{
+	margin-left: -120px;
+	width: 33%;
+} #lastname{
+	float: left;
+	width: 33%;
+} #middlename{
+	float: right;
+	width: 33%;
+	margin-top: -34px;	
+} #to{
+	margin-right: 25px;
+} #from{
+	margin-right: 9px;
+} hr{
+	border: 1px solid lightgray;
+}

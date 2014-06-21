@@ -1,0 +1,92 @@
+#AdminLoggedIn h1{
+font-family:candara;
+font-size:18px;
+font-weight:bold italic;
+margin-left:-250px;
+}
+
+button.logout{
+background-image:url(../img/logout.png);
+width:88px;
+height:31px;
+border-style:none;
+border-radius:30px;
+margin-left:-90px;
+margin-top:20px;
+}
+
+input.adminSearch{
+width:435px;
+height:30px;
+margin:20px 0 0 320px;
+font-family:candara;
+float:left;
+border-radius:5px;
+border: 1px solid black;
+}
+
+#category{
+height:30px;
+font-family:candara;
+margin:20px 0 0 10px;
+border: 1px solid black;
+}
+
+button.adminsearch{
+background-image:url(../img/adminsearch.png);
+width:132px;
+height:42px;
+border-style:none;
+border-radius:15px;
+margin: 5px 0 0 10px;
+}
+
+table {
+font-family:candara;
+margin-top:20px;
+width:900px;
+text-align:center;
+}
+
+
+button.addbook{
+background-image:url(../img/addbook.png);
+width:155px;
+height:42px;
+border-style:none;
+border-radius:15px;
+margin-top:105px;
+}
+
+button.deletebook{
+background-image:url(../img/deletebook.png);
+width:158px;
+height:42px;
+border-style:none;
+border-radius:20px;
+}
+
+button.viewallbooks{
+background-image:url(../img/viewallbooks.png);
+width:158px;
+height:39px;
+border-style:none;
+border-radius:20px;
+}
+
+button.viewguestlogs{
+background-image:url(../img/viewguestlogs.png);
+width:158px;
+height:39px;
+border-style:none;
+border-radius:20px;
+}
+
+button.viewborrowedbooks{
+background-image:url(../img/viewborrowedbooks.png);
+width:207px;
+height:39px;
+border-style:none;
+border-radius:20px;
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;delete.jsp&apos; to &apos;WebContent&apos;" description="Move &apos;delete.jsp&apos; to &apos;WebContent&apos;" destination="WebContent" element1="/SIS/WebContent/delete.jsp" element2="/SIS/WebContent/img" element3="/SIS/WebContent/index.html" element4="/SIS/WebContent/new.jsp" element5="/SIS/WebContent/payment.jsp" element6="/SIS/WebContent/search.jsp" element7="/SIS/WebContent/update.jsp" element8="/SIS/WebContent/viewall.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="8" stamp="1395198397962" updateReferences="true"/>
+</session>

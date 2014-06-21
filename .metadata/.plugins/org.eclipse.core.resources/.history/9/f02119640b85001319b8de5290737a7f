@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Input Page</title>
+</head>
+<body>
+	<center>
+		<h3>Employee Input</h3>
+		<br /><br />
+		<form action="MainPageController" method="get">
+			Id Number: <input type="text" name="idno" /><br /><br />
+			<input type="submit" name="info" value="Get Information"/>
+			<input type="submit" name="update" value="Update Employee"/><br /><br />
+			<input type="submit" name="add" value="Add Employee"/>
+			<input type="submit" name="delete" value="Delete Employee"/>
+		</form>
+	</center>
+</body>
+</html>

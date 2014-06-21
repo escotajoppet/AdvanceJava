@@ -1,0 +1,185 @@
+package classes.record;
+
+import database.connection.*;
+import java.sql.*;
+
+public class ClassRecordManager extends SQLStringQueries{
+	ConnectToDb objDb = new ConnectToDb();
+	
+	ResultSet rs = null;
+	Statement st = null;
+	
+	String query = "";
+	String message = "";
+	
+	public Connection getConnection(){
+		return objDb.getConnection();
+	}
+	
+	public boolean login(String type, String id, String password){
+		String tableName = "";
+		String fields = "";
+		String condition = "";
+		
+		tableName = type.equals("faculty") ? "tbl_faculty" : "tbl_administrator";
+		fields = type.equals("faculty") ? "`faculty_id`, `faculty_name`, `faculty_status`, `faculty_password`" : "`admin_id`, `admin_password`"; 
+		condition = "1";
+		
+		try{
+			st = getConnection().createStatement();
+			query = selectFields(fields, tableName, condition);
+			rs = st.executeQuery(query);
+			
+			while(rs.next()){
+				if(type.equals("faculty")){
+					setAlFacultyId(rs.getString("faculty_id"));
+					setAlFacultyName(rs.getString("faculty_name"));
+					setAlFacultyStatus(rs.getString("faculty_status"));
+					setAlFacultyPassword(rs.getString("faculty_password"));
+				}
+			}
+			
+			if(getAlFacultyId().contains(id)){
+				if(getAlFacultyPassword().get(getAlFacultyId().indexOf(id)).equals(password)){
+					setLoggedId(id);
+					setLoggedName(getAlFacultyName().get(getAlFacultyId().indexOf(id)));
+					setLoggedStatus(getAlFacultyStatus().get(getAlFacultyId().indexOf(id)));
+					return true;
+				}
+			}
+			
+			setMessage("error logging in: the information is not in the database");
+			return false;
+		} catch(Exception e){
+			setMessage("error logging in " + e);
+			return false;
+		}
+	}
+	
+	public void setTable(String type){
+		String tableName = "";
+		String fields = "";
+		String condition = "";
+		
+		switch(type){
+			case "faculty":
+				break;
+			case "class":
+				tableName = "tbl_class";
+				fields = "`class_entry_number`, `class_school_year`, `class_semester`, `class_subject_code`, `class_subject_name`, `class_schedule`";
+				condition = "`class_instructor`='"+getLoggedName()+"'";
+				break;
+			case "student":
+				tableName = "tbl_student";
+				fields = "`student_entry_number`, `student_subject_code`, `student_id`, `student_name`, `student_year_and_section`, `student_status`";
+				condition = "`student_subject_code`='"+getSelectedClassSubjectCode()+"' AND `student_instructor`='"+getLoggedName()+"' AND `student_schedule`='"+getSelectedClassSchedule()+"'";
+				break;
+			case "grade":
+				tableName = "tbl_grade";
+				fields = "*";
+				condition = "`grade_subject_code`='"+getGradeSelectedSubjectCode()+"' AND `grade_student_id`='"+getGradeSelectedStudentId()+"'";
+				break;
+			default:	
+				break;
+		}
+		
+		try{
+			st = getConnection().createStatement();
+			query = selectFields(fields, tableName, condition);
+			rs = st.executeQuery(query);
+			
+			while(rs.next()){
+				if(type.equals("class")){
+					setClassEntryNumber(rs.getInt("class_entry_number"));
+					setClassSchoolYear(rs.getString("class_school_year"));
+					setClassSemester(rs.getString("class_semester"));
+					setClassSubjectCode(rs.getString("class_subject_code"));
+					setClassSubjectName(rs.getString("class_subject_name"));
+					setClassSchedule(rs.getString("class_schedule"));
+				} else if(type.equals("student")){
+					setStudentEntryNumber(rs.getInt("student_entry_number"));
+					setStudentId(rs.getString("student_id"));
+					setStudentName(rs.getString("student_name"));
+					setStudentStatus(rs.getString("student_status"));
+					setStudentSubjectCode(rs.getString("student_subject_code"));
+					setStudentYearAndSection(rs.getString("student_year_and_section"));
+				} else if(type.equals("grade")){
+					setGradeFinalExam(rs.getString("grade_final_exam"));
+					setGradeFinalProject(rs.getString("grade_final_project"));
+					setGradeFinalQuiz3(rs.getString("grade_final_quiz3"));
+					setGradeFinalQuiz4(rs.getString("grade_final_quiz4"));
+					setGradeMidtermExam(rs.getString("grade_midterm_exam"));
+					setGradeMidtermProject(rs.getString("grade_midterm_project"));
+					setGradeMidtermQuiz1(rs.getString("grade_midterm_quiz1"));
+					setGradeMidtermQuiz2(rs.getString("grade_midterm_quiz2"));
+				}
+			}
+			
+		} catch(Exception e){
+			setMessage("error setting table " + e);
+			return;
+		}
+	}
+	
+	public void delete(String type, String id){
+		String tableName = "";
+		String conditionField = "";
+		
+		switch(type){
+			case "faculty":
+				tableName = "tbl_faculty";
+				conditionField = "faculty_id";
+				break;
+			case "class":
+				tableName = "tbl_class";
+				conditionField = "class_entry_number";
+				break;
+			case "student":
+				tableName = "tbl_student";
+				conditionField = "student_entry_number";
+				break;
+		}
+		
+		try{
+			st = getConnection().createStatement();
+			query = deleteFromField(tableName, conditionField, id);
+			st.execute(query);
+			
+		} catch(Exception e){
+			setMessage("error deleting " + e);
+			return;
+		}
+	}
+	
+	public void add(String type, String[] fieldValues){
+		
+	}
+	
+	public void update(String[] grades){
+		String[] gradeFields = {"`grade_midterm_quiz1`", "`grade_midterm_quiz2`", "`grade_midterm_exam`", "`grade_midterm_project`", "`grade_final_quiz3`" , "`grade_final_quiz4`", "`grade_final_exam`", "`grade_final_project`"};
+		String tableName = "tbl_grade";		
+		String condition = "`grade_subject_code`='"+getGradeSelectedSubjectCode()+"' AND `grade_student_id`='"+getGradeSelectedStudentId()+"'";
+		
+		try{
+			st = getConnection().createStatement();
+			
+			for(int i = 0; i<grades.length; i++){
+				query = updateField(tableName, gradeFields[i], grades[i], condition);
+				System.out.println(query);
+				st.execute(query);
+			}
+			
+		} catch(Exception e){
+			setMessage("error updating " + e);
+			return;
+		}
+	}
+	
+	public void setMessage(String message){
+		this.message = message;
+	}
+	
+	public String getMessage(){
+		return this.message;
+	}
+}

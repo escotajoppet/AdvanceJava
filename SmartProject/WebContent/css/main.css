@@ -1,0 +1,25 @@
+/*all pages*/
+center{
+	margin-top: 30px;
+} body{
+	background-color: aliceblue;
+} .button{
+	margin: 0px 30px;
+} .mainDiv{
+	width: 800px;
+}
+
+/*input_form.jsp*/
+#input{
+	width: 50%;
+	float: left;
+	margin-right: 10px;
+} #submit{
+	width: 18%;
+	margin-left: 10px;
+}
+
+/*subscriber_info.jsp*/
+.subscriberTH{
+	width: 30%;
+}

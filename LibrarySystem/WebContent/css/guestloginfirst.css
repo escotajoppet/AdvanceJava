@@ -1,0 +1,36 @@
+#GuestLoggedIn h1{
+font-family:candara;
+font-size:18px;
+font-weight:bold italic;
+margin-left:-250px;
+}
+
+input.guestSearch{
+width:435px;
+height:30px;
+margin:40px 0 0 320px;
+font-family:candara;
+float:left;
+border-radius:5px;
+border: 1px solid black;
+}
+
+#category{
+height:30px;
+font-family:candara;
+margin:40px 0 0 10px;
+border: 1px solid black;
+}
+
+button.guestsearch{
+background-image:url(../img/adminsearch.png);
+width:132px;
+height:42px;
+border-style:none;
+border-radius:15px;
+margin: 5px 0 0 10px;
+}
+
+
+
+

@@ -1,0 +1,70 @@
+@CHARSET "ISO-8859-1";
+
+#AdminLoggedIn h1{
+font-family:candara;
+font-size:18px;
+font-weight:bold italic;
+margin-left:-250px;
+}
+
+
+button.logout{
+background-image:url(../img/logout.png);
+width:88px;
+height:31px;
+border-style:none;
+border-radius:30px;
+margin-left:-90px;
+margin-top:20px;
+}
+
+.label{
+font-family:candara;
+font-size:16px;
+margin-left:470px;
+}
+
+input.controlnumber, input.booktitle, input.author, input.yearpublished {
+background: url(../img/username.png);
+width:234px;
+height:39px;
+border:none;
+margin-left:5px;
+padding:0 10px;
+}
+
+input.controlnumber{
+margin-top:50px;
+}
+
+input.booktitle{
+margin-left:45px;
+}
+
+input.author{
+margin-left:65px;
+}
+
+input.yearpublished{
+margin-left:15px;
+}
+
+button.add{
+background: url(../img/add.png);
+width:125px;
+height:40px;
+border:none;
+margin-left:520px;
+margin-top:50px;
+}
+
+button.back{
+background: url(../img/back.png);
+width:135px;
+height:45px;
+border:none;
+float:right;
+margin-top:-40px;
+text-align:center;
+margin-right:580px;
+}

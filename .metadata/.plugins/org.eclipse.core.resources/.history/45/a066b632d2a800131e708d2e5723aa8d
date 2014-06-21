@@ -1,0 +1,74 @@
+package thesis.management;
+
+import java.sql.*;
+
+import database.connect.*;
+
+public class ThesisManagement {
+	DbConnect dbObj = null;
+	Statement st = null;
+	ResultSet rs = null;
+	String message = "";
+	String sqlQuery = "";
+	String userName = "";
+	
+	public ThesisManagement(){
+		dbObj = new DbConnect();
+	}
+	
+	public Connection getDbConnection(){
+		return dbObj.getDbConnect();
+	}
+	
+	public void setMessage(String message){
+		this.message = message;
+	}
+	
+	public String getMessage(){
+		return this.message;
+	}
+	
+	public void setUserName(String userName){
+		this.userName = userName;
+	}
+	
+	public String getUserName(){
+		return this.userName;
+	}
+	
+	public void addNewThesisTitle(int groupNumber, String thesisType, String thesisTitle, String briefDescription, String member1, String member2, String member3, String member4){
+		try{
+			st = getDbConnection().createStatement();
+			sqlQuery = "INSERT INTO `thesis_titles` (`group_number`, `thesis_type`, `thesis_title`, `brief_description`, `member_1`, `member_2`, `member_3`, `member_4`, `status`) "
+					+ "VALUES('"+groupNumber+"', '"+thesisType+"', '"+thesisTitle+"', '"+briefDescription+"', '"+member1+"', '"+member2+"', '"+member3+"', '"+member4+"', '')";
+			st.execute(sqlQuery);
+			
+			setMessage("adding title successful");
+		} catch(Exception e){
+			setMessage("error adding new thesis title " + e);
+			return;
+		}
+	}
+	
+	public boolean logInMember(String email, String password){
+		try{
+			st = getConnection().createStatement();
+			sqlQuery = "SELECT `emailadd`, `password` FROM `members`";
+			rs = st.executeQuery(sqlQuery);
+			
+			while(rs.next()){
+				if(email.equals(rs.getString("emailadd"))){
+					if(password.equals(rs.getString("password"))){
+						return true;
+					}
+				}
+			}
+			
+			setMessage("error logging in: the information is not on the database");
+			return false;
+		} catch(Exception e){
+			setMessage("error logging in " + e);
+			return false;
+		}
+	}
+}

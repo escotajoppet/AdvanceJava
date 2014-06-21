@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Update Employee</title>
+</head>
+
+<jsp:useBean id="employeemngr" class="employee.manager.EmployeeManager" scope="session"/>
+<%!
+	byte count = 0;
+%>
+
+<%
+	if(count==0){
+		employeemngr.setIdNumber(request.getParameter("idno"));
+		count = 1;
+	}
+	
+	out.println(request.getParameter("idno"));
+
+	String name = request.getParameter("name");
+	String address = request.getParameter("address");
+	String number = request.getParameter("number");
+	
+	String updateEmployee = request.getParameter("updateEmployee");
+	
+	if(updateEmployee!=null){
+		employeemngr.updateEmployee(employeemngr.getIdNumber(), name, address, number);
+		count = 0;
+		%><jsp:forward page="index.html"/><%
+	}
+%>
+
+<body>
+	<center>
+		<h3>Update Employee</h3>
+		<br /><br />
+		<form action="update_employee.jsp">
+			Employee Name: <input type="text" name="name"/><br /><br />
+			Employee Address: <input type="text" name="address"/><br /><br />
+			Employee Number: <input type="text" name="number"/>
+			<br /><br />
+			<input type="submit" name="updateEmployee" Value="Update Employee!"/>
+			<br /><br />
+			<a href="index.html">Back to Main Page</a>
+		</form>
+	</center>
+	
+</body>
+</html>

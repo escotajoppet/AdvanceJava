@@ -1,0 +1,21 @@
+content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="employee.manager.EmployeeManager"><rhs name\="employee.manager.EmployeeManager"/></lhs><lhs name\="classes.record.ClassRecord"><rhs name\="classes.record.ClassRecord"/></lhs><lhs name\="database.connection.DatabaseConnection"><rhs name\="database.connection.DatabaseConnection"/></lhs><lhs name\="classes.record.NewClassRecord"><rhs name\="classes.record.NewClassRecord"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.ArrayList"/><rhs name\="java.util.GregorianCalendar"/><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="java.text.DateFormat"><rhs name\="java.text.SimpleDateFormat"/></lhs><lhs name\="database.connect.DbConnect"><rhs name\="database.connect.DbConnect"/></lhs><lhs name\="table.data.PanelistView"><rhs name\="thesis.management.ThesisManagement"/></lhs><lhs name\="table.data.GuestView"><rhs name\="thesis.management.ThesisManagement"/></lhs><lhs name\="sql.string.commands.SqlStringCommands"><rhs name\="thesis.management.ThesisManagement"/></lhs><lhs name\="thesis.management.ThesisManagement"><rhs name\="thesis.management.ThesisManagement"/></lhs><lhs name\="javax.servlet.http.HttpServlet"><rhs name\="page.controller.AsAdminController"/></lhs><lhs name\="javax.servlet.GenericServlet"><rhs name\="page.controller.AsAdminController"/></lhs><lhs name\="javax.servlet.Servlet"><rhs name\="page.controller.AsAdminController"/></lhs><lhs name\="javax.servlet.ServletConfig"><rhs name\="page.controller.AsAdminController"/></lhs><lhs name\="page.controller.AsAdminController"><rhs name\="page.controller.AsAdminController"/></lhs><lhs name\="database.connection.DatabaseConnectionString"><rhs name\="database.connection.ConnectToDb"/></lhs><lhs name\="database.connection.ConnectToDb"><rhs name\="database.connection.ConnectToDb"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Calendar"><rhs name\="java.util.GregorianCalendar"/></lhs><lhs name\="java.util.GregorianCalendar"><rhs name\="java.util.GregorianCalendar"/></lhs><lhs name\="sql.server.database.DatabaseConnection"><rhs name\="sql.server.database.DatabaseConnection"/></lhs><lhs name\="trip.practice.WordPalindrome"><rhs name\="trip.practice.WordPalindrome"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.AbstractStringBuilder"><rhs name\="java.lang.StringBuilder"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.lang.StringBuilder"/></lhs></history>
+content_assist_number_of_computers=21
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Tahoma|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|0|3|2|1|34|Tahoma;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-color: aliceblue;
+} center{
+	margin-top: 30px;
+} .mainDiv{
+	width: 500px;
+} #dropdown{
+	margin: 0 20px;
+} .element{
+	width: 29%;
+	margin: 5px;
+} #setvalues{
+	margin-left: 320px;
+} .textValue, .textValue1, .textValue2{
+	margin-bottom: 10px;
+	width: 70%;
+} .textValue{
+	margin-left: 20px;
+} .textValue1{
+	margin-left: 10px;
+} .textValue2{
+	margin-left: 17px;
+} .numericmethod{
+	margin: 0 5px 10px 5px;
+} #factorial{
+	float: left;
+	margin-left: 130px;
+} #fibonacci{
+	float: right;
+	margin-right: 130px;
+} #text{
+	width: 73%;
+	margin-right: 10px;
+	float: left;
+}

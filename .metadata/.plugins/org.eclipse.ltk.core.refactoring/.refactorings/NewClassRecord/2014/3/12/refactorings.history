@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;NewClassRecord/WebContent/class_list.jsp&apos; to &apos;class_list_page.jsp&apos;" description="Rename resource &apos;class_list.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/class_list.jsp" name="class_list_page.jsp" stamp="1395449517394" updateReferences="true"/>
+</session>

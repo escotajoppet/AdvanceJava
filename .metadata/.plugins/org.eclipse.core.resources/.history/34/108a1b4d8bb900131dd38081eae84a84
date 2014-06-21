@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<form action="Controller">
+			<h1>Hotel Accomodation System</h1>
+			<button type="submit" name="btn" value="accomodation">Accomodation</button>
+			<button type="submit" name="btn" value="sightsandactivities">Sights and Activities</button>
+			<button type="submit" name="btn" value="planyourvisit">Plan Your Visit</button>
+			<button type="submit" name="btn" value="contactus">Contact Us</button>
+		</form>
+		
+		<br />
+		
+		
+	</center>
+</body>
+</html>

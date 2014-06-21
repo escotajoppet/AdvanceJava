@@ -1,0 +1,11 @@
+127.0.0.1 - - [01/May/2014:21:47:48 -0700] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [01/May/2014:22:11:01 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:11:33 -0700] "GET /Java55FirstSample/index.jsp HTTP/1.1" 200 504
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:11:41 -0700] "GET /Java55FirstSample/Controller?myName=Joppet+Escota&btn=printName HTTP/1.1" 200 504
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:11:56 -0700] "GET /Java55FirstSample/Controller?myName=Joppet+Escota&btn=printName HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:11:56 -0700] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:12:00 -0700] "GET /Java55FirstSample/Controller?myName=Joppet+Escota&btn=printName HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:12:01 -0700] "GET /Java55FirstSample/Controller?myName=Joppet+Escota&btn=printName HTTP/1.1" 200 553
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:12:04 -0700] "GET /Java55FirstSample/Controller?myName=&btn=printName HTTP/1.1" 200 540
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:12:09 -0700] "GET /Java55FirstSample/Controller?myName=the+quick&btn=printName HTTP/1.1" 200 549
+0:0:0:0:0:0:0:1 - - [01/May/2014:22:12:14 -0700] "GET /Java55FirstSample/Controller?myName=Ma.+Clarissa+Deuda&btn=printName HTTP/1.1" 200 558

@@ -1,0 +1,73 @@
+#GuestLoggedIn h1{
+font-family:candara;
+font-size:18px;
+font-weight:bold italic;
+margin-left:-250px;
+}
+
+input.guestSearch{
+width:435px;
+height:30px;
+margin:40px 0 0 320px;
+font-family:candara;
+float:left;
+border-radius:5px;
+border: 1px solid black;
+}
+
+#category{
+height:30px;
+font-family:candara;
+margin:40px 0 0 10px;
+border: 1px solid black;
+}
+
+button.guestsearch{
+background-image:url(../img/adminsearch.png);
+width:132px;
+height:42px;
+border-style:none;
+border-radius:15px;
+margin: 5px 0 0 10px;
+}
+
+table {
+font-family:candara;
+margin-top:20px;
+width:900px;
+text-align:center;
+}
+
+
+button.borrowbook{
+background-image:url(../img/borrowbook.png);
+width:155px;
+height:42px;
+border-style:none;
+border-radius:15px;
+margin-top:50px;
+}
+
+button.returnbook{
+background-image:url(../img/returnbook.png);
+width:158px;
+height:42px;
+border-style:none;
+border-radius:20px;
+margin-top:-50px;
+
+}
+
+.backtomainpage{
+	font-family:candara;
+	color:#e7adad;
+}
+
+button.viewallbooks{
+background-image:url(../img/viewallbooks.png);
+width:158px;
+height:39px;
+border-style:none;
+border-radius:20px;
+}
+

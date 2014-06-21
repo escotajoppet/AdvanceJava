@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+
+#numberofclothes img{
+	margin-left:30px;
+	margin-bottom:25px;
+}
+
+.text{
+	margin-left:75px;
+}
+
+input.count{
+	background: #39c5cb;
+	width:35px;
+	height:28px;
+	border:3px solid black;
+	font-family:'bubblegum sans';
+	font-size: 18px;
+	margin-left:20px;
+	margin-bottom:30px;
+}
+
+#typesofwashes img{
+	margin-left:30px;
+}
+
+#washesdropdown{
+	background:#39c5cb;
+	width:200px;
+	height:25px;
+	border: 1px solid black;
+	margin-left:20px;
+	font-family:candara;
+	font-size:16px;
+}
+
+#modeofpayment img{
+	margin-left:30px;
+}
+
+#paymentdropdown{
+	background:#39c5cb;
+	width:200px;
+	height:25px;
+	border: 1px solid black;
+	margin-left:12px;
+	font-family:candara;
+	font-size:16px;
+}
+
+#servicedropdown{
+	background:#39c5cb;
+	width:200px;
+	height:25px;
+	border: 1px solid black;
+	margin-left:23px;
+	font-family:candara;
+	font-size:16px;
+}
+
+
+.success{
+	margin-left:580px;
+	width:300px;
+	margin-top:20px;
+}

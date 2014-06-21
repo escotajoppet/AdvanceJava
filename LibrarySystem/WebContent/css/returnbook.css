@@ -1,0 +1,77 @@
+@CHARSET "ISO-8859-1";
+
+#main h3{
+font-family:candara;
+margin-top:50px;
+text-align:center;
+}
+
+.text1{
+	font-family:candara;
+	font-size:16px;
+	margin-left:15px;
+}
+
+.text2{
+	font-family:candara;
+	font-size:16px;
+}
+
+#Info{
+	margin-top:50px;
+	width:380px;
+	text-align:center;
+}
+
+input.input1{
+	background: url(../img/username.png);
+	width:234px;
+	height:39px;
+	border:none;
+	margin-left:5px;
+	padding:0 10px;
+}
+
+input.input2{
+	background: url(../img/username.png);
+	width:234px;
+	height:39px;
+	border:none;
+	margin-left:5px;
+	padding:0 10px;
+}
+
+table {
+font-family:candara;
+margin-top:50px;
+width:900px;
+text-align:center;
+}
+
+button.borrow{
+	background:url(../img/borrowbook.png);
+	width:155px;
+	height:42px;
+	border:none;
+	margin-left:770px;
+	margin-top:50px;
+}
+
+button.back{
+	background:url(../img/back.png);
+	width:136px;
+	height:42px;
+	border:none;
+	float:right;
+	margin-top:-42px;
+	margin-right:300px;
+}
+
+button.return{
+	background:url(../img/returnbook.png);
+	width:157px;
+	height:42px;
+	border:none;
+	margin-left:750px;
+	margin-top:50px;
+}
